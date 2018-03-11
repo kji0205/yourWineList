@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hg4-DF-jOy">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,15 +16,15 @@
             <objects>
                 <tableViewController id="ySP-9V-I5R" customClass="WineTableViewController" customModule="wineList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hEs-Cx-TSH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WineTableViewCell" rowHeight="90" id="dRJ-YS-Bzd" customClass="WineTableViewCell" customModule="wineList" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="90"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dRJ-YS-Bzd" id="cyE-E4-yxM">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="J1f-D5-bxR">
@@ -73,21 +73,21 @@
         <scene sceneID="yA0-U7-5Rg">
             <objects>
                 <viewController id="M7o-iy-c5U" customClass="WineViewController" customModule="wineList" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cdj-4j-4XV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cdj-4j-4XV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QmW-kY-PHb">
-                                <rect key="frame" x="15" y="84" width="290" height="434"/>
+                                <rect key="frame" x="15" y="84" width="345" height="410"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter wine name." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fB2-lp-mfm">
-                                        <rect key="frame" x="0.0" y="0.0" width="290" height="28"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="hDJ-aO-0rQ">
-                                        <rect key="frame" x="0.0" y="36" width="290" height="290"/>
+                                        <rect key="frame" x="12.5" y="38" width="320" height="320"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="hDJ-aO-0rQ" secondAttribute="height" multiplier="1:1" id="d0H-sv-m7n"/>
@@ -97,10 +97,10 @@
                                         </connections>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pyg-2c-da7" customClass="RatingControl" customModule="wineList" customModuleProvider="target">
-                                        <rect key="frame" x="79" y="334" width="132" height="100"/>
+                                        <rect key="frame" x="46.5" y="366" width="252" height="44"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="size" keyPath="starSize">
-                                                <size key="value" width="20" height="100"/>
+                                                <size key="value" width="44" height="44"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="starCount">
                                                 <integer key="value" value="5"/>
@@ -116,7 +116,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="QmW-kY-PHb" firstAttribute="leading" secondItem="CRi-FU-eGG" secondAttribute="leading" constant="15" id="HUa-pw-Ahz"/>
-                            <constraint firstItem="CRi-FU-eGG" firstAttribute="bottom" secondItem="QmW-kY-PHb" secondAttribute="bottom" constant="50" id="aBK-1d-vi7"/>
                             <constraint firstItem="QmW-kY-PHb" firstAttribute="top" secondItem="CRi-FU-eGG" secondAttribute="top" constant="20" id="dqK-8F-6Aj"/>
                             <constraint firstItem="QmW-kY-PHb" firstAttribute="trailing" secondItem="CRi-FU-eGG" secondAttribute="trailing" constant="-15" id="zGK-2n-ph5"/>
                         </constraints>
@@ -157,7 +156,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hg4-DF-jOy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a9H-Tn-ewV">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -175,7 +174,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UV8-Bd-A4u" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fGt-1A-qUb">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

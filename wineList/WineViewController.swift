@@ -35,7 +35,7 @@ class WineViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         
         // Handle the text field’s user input through delegate callbacks.
         itemTextField.delegate = self
-        
+
         // Set up views if editing an existing Meal.
         if let wine = wine {
             navigationItem.title = wine.name
