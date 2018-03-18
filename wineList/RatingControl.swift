@@ -46,7 +46,7 @@ import UIKit
     
     //MARK: Button Action
     
-    @objc func ratingButtonTapped(button: UIButton) {
+    @IBAction func ratingButtonTapped(button: UIButton) {
         print(#function)
         
         guard let index = ratingButtons.index(of: button) else {
@@ -102,7 +102,9 @@ import UIKit
             button.accessibilityLabel = "Set \(index + 1) star rating"
             
             // Setup the button action
-            button.addTarget(self, action: #selector(RatingControl.ratingButtonTapped(button:)), for: .touchUpInside)
+            if (self.restorationIdentifier == "RatingControlSetting") {
+                button.addTarget(self, action: #selector(RatingControl.ratingButtonTapped(button:)), for: .touchUpInside)
+            }
             
             // Add the button to the stack
             addArrangedSubview(button)
